@@ -1,0 +1,61 @@
+/* https://paddle8.com/work/ellsworth-kelly/78782-color-squares-4/ */
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.column-1 {
+	height: 100vh;
+	width: 23.2vw; 
+	background-color: black;
+	display: block;
+}
+
+.column-2 {
+	height: 100vh;
+	width: 50.6vw; 
+	background-color: darkred
+
+}
+.column-3 {
+	height: 100vh;
+	width: 25vw; 
+	background-color: black
+	}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+}
+
+.box {
+	height: 16.5vh;
+	width: 20vw;
+	margin: 30px;
+}
+
+
+.red {
+	background-color: #8e0202;
+}
+
+.black {
+	background-color: #000000;
+}
+
+h1 {
+	color:black;
+    text-align: center;
+	font-size: 70
+}
+	
+	
+img{
+	padding: 4%
+}
+
