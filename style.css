@@ -102,6 +102,11 @@ h2  {
 img{
 	padding: 4%
 }
+
+img:hover {
+	opacity: 0.5;
+}
+
 @media only screen and (max-width:900px) {
 	.column-2{
 		order: 1;
