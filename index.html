@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-7">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+		<link href="Pictures/rank.png" rel="icon" type="Pictures/png" />
 		<title>Zombies</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -11,11 +11,11 @@
 	
 	<body>
 		<div class="column-1">
-			<div class="box red"><center><img src="jug.jpg" height="87%" width="91%"></center></div>
+			<div class="box red"><center><img src="jug.jpg" onclick="playsound1(this)" height="87%" width="91%"></center></div>
 			<div class="box2">Juggernog</div>
-			<div class="box3 red"><center>2010</center></div> 
+			<div class="box3 red" id="2010" onclick="showText1(this)"><center>2010</center></div> 
 			<div class="box2">Speed Cola</div>
-			<div class="box red"><center><img src="speed.jpg" height="87%" width="91%"></center></div>
+			<div class="box red"><center><img src="speed.jpg" onclick="playsound2(this)" height="87%" width="91%"></center></div>
 		</div>
 		
 		<div class="column-2">
@@ -25,17 +25,21 @@
 		</div>
 		
 		<div class="column-3">
-			<div class="box red"><center><img src="stamin.jpg" height="87%" width="91%"></center></div>
+			<div class="box red"><center><img src="stamin.jpg" onclick="playsound3(this)"height="87%" width="91%"></center></div>
 			<div class="box2">Stamin-Up</div>
-			<div class="box3 red"><center>2013</center></div>
+			<div class="box3 red" id="2013" onclick="showText2(this)"><center>2013</center></div>
 			<div class="box2">Double Tap</div>
-			<div class="box red"><center><img src="double.jpg" height="87%" width="91%"></center></div>
+			<div class="box red"><center><img src="double.jpg" onclick="playsound4(this)" height="87%" width="91%"></center></div>
+			
+			</div>
+			
+			<audio src="Music/jug.mp3" type="audio/mp3" id="jug"></audio>
+			<audio src="Music/speed.mp3" type="audio/mp3" id="speed"></audio>
+			<audio src="Music/stamin.mp3" type="audio/mp3" id="stamin"></audio>
+			<audio src="Music/double.mp3" type="audio/mp3" id="double"></audio>
+
+			<script type="text/javascript" src="zombies.js"></script>
 		</div>
-	
-		
-	
-		<script src="script.js"></script>
-	
 	</body>
 	
 </html>
